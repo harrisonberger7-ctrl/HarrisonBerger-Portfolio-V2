@@ -1,0 +1,119 @@
+<!doctype html>
+<!-- Engineering index: links visitors to detailed engineering case studies. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Engineering Projects — Harrison Berger</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <!-- Keyboard users can bypass the repeated navigation. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand"><a href="/">Harrison Berger</a></div>
+
+      <nav id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/projects/machining.html">Machining</a></li>
+          <li><a href="/projects/buckeye/index.html">Buckeye</a></li>
+        </ul>
+      </nav>
+      <button id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Engineering Projects</h1>
+
+    <p class="intro">
+      Academic, independent, and professional engineering projects.
+      Select a project to view its design process, documentation, testing,
+      and final results.
+    </p>
+
+  <div class="cards-grid">
+
+  <!-- Smart Water Bottle -->
+  <article class="smart-water-bottle-card">
+
+    <img
+      class="smart-water-bottle-image"
+      src="/assets/images/Smart_Water_Bottle_Content/smart-water-bottle-finished.jpeg"
+      alt="Completed Smart Water Bottle prototype"
+      loading="lazy"
+    >
+
+    <h2>Smart Water Bottle</h2>
+
+    <p>
+      An Arduino-powered water-dispensing prototype developed to improve
+      accessibility for elderly and disabled users. The system monitors
+      water level and temperature, displays live information on an LCD,
+      and provides variable pump control through an analog joystick.
+    </p>
+
+    <a class="btn" href="/projects/smart-water-bottle.html">
+      View Smart Water Bottle Project
+    </a>
+
+  </article>
+
+  <!-- Tri-Wheel Dolly -->
+  <article class="dolly-card">
+
+    <div class="dolly-images">
+      <img
+        src="/assets/images/Dolly_Content/showcase-upright.jpeg"
+        alt="Tri-Wheel Dolly standing in its upright configuration"
+        loading="lazy"
+      >
+
+      <img
+        src="/assets/images/Dolly_Content/showcase-horizontal.jpeg"
+        alt="Tri-Wheel Dolly opened in its horizontal configuration"
+        loading="lazy"
+      >
+    </div>
+
+    <h2>Tri-Wheel Dolly</h2>
+
+    <p>
+      A folding material-handling dolly designed in Onshape and
+      manufactured using CNC milling. The project includes CAD design,
+      engineering drawings, machining documentation, assembly, and
+      weighted testing.
+    </p>
+
+    <a class="btn" href="/projects/dolly.html">
+      View Dolly Project
+    </a>
+
+  </article>
+
+</div>
+
+    <div
+      id="project-modal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="modal-content" role="document">
+        <button class="modal-close" aria-label="Close">Close</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; Harrison Berger — <span id="year-4"></span></p>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

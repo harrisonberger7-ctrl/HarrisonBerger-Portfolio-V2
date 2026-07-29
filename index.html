@@ -1,0 +1,108 @@
+<!doctype html>
+<!-- Home page: introduction, featured projects, scholarship speech, and contact information. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harrison Berger — Mechanical Engineering Portfolio</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <a href="/">Harrison Berger</a>
+      </div>
+      <nav id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/projects/machining.html">Machining</a></li>
+          <li><a href="/projects/engineering.html">Engineering</a></li>
+          <li><a href="/projects/buckeye/index.html">Buckeye</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Intro">
+      <div class="hero-grid container">
+        <div class="hero-text">
+          <h1>Harrison Berger</h1>
+          <p class="title">Mechanical Engineering Student | Scientific Instrument Maker | Aspiring Aerospace Engineer</p>
+          <p class="lead">I am a junior Mechanical Engineering student at The Ohio State University with 7 years of machining experience focused on manual & CNC machining, CAD/CAM, technical drawings, and precision manufacturing. My long-term goal is to work in aerospace engineering, advanced manufacturing, or R&amp;D.</p>
+          <p class="hero-ctas">
+            <a class="btn primary" href="assets/images/Resume_Harrison_Berger.pdf" download>Download Résumé</a>
+            <a class="btn" href="/projects/machining.html">View Projects</a>
+          </p>
+        </div>
+        <div class="hero-image" role="img" aria-label="Technical hero image">
+          <img src="assets/images/Outlook_Profile_Picture.jpeg" alt="Portrait of Harrison Berger" />
+        </div>
+      </div>
+    </section>
+
+        <section class="highlights container">
+      <h2>Featured Work</h2>
+      <div id="featured-cards" class="cards-grid" aria-live="polite">
+        <!-- main.js inserts the three featured project cards here. -->
+      </div>
+    </section>
+
+    <section class="speech-section container">
+    <h2>Scholarship Speech</h2>
+
+    <p class="speech-description">
+        This speech was delivered at The Ohio State University Engineering Scholarship
+        Banquet after receiving the Jeffrey & Margaret Patterson Scholarship.
+    </p>
+
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/fo5vYGEhoZc"
+            title="Scholarship Speech"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+
+
+
+</section>
+
+    
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>Résumé, GitHub, LinkedIn, and email links are provided — preferred contact via email or LinkedIn for professional inquiries.</p>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:Harrisonberger7@gmail.com">Harrisonberger7@gmail.com</a> </li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/harrisonberger7-ctrl" target="_blank" rel="noopener">github.com/harrisonberger7-ctrl</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harrison-berger-666993226"
+   target="_blank"
+   rel="noopener">
+   linkedin.com/in/harrison-berger
+</a> </li>
+      </ul>
+      </section>
+ 
+
+   </main>
+  
+<footer class="site-footer container">
+  <p>&copy; Harrison Berger — <span id="year"></span></p>
+</footer>
+
+<div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close">Close</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

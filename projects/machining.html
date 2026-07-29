@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- Machining index: main.js generates the chronological machining presentation. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Machining Work — Harrison Berger</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <!-- Keyboard users can bypass the repeated navigation. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand"><a href="/">Harrison Berger</a></div>
+      <nav id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/projects/engineering.html">Engineering</a></li>
+          <li><a href="/projects/buckeye/index.html">Buckeye</a></li>
+        </ul>
+      </nav>
+      <button id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Machining Work</h1>
+    <p class="intro">Gallery of machining projects. Click any card to view details. These are placeholders — replace images and content with your projects.</p>
+
+    <div id="machining-grid" class="cards-grid" aria-live="polite">
+      <!-- JS will render machining project cards from data/projects.json -->
+    </div>
+
+    <!-- Modal template for project details -->
+    <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-content" role="document">
+        <button class="modal-close" aria-label="Close">Close</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="site-footer container">
+    <p>&copy; Harrison Berger — <span id="year-3"></span></p>
+  </footer>
+
+  <script
+  type="module"
+  src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+</script>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

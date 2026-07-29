@@ -1,0 +1,549 @@
+<!doctype html>
+<!-- Tri-Wheel Dolly case study: design, manufacturing, testing, failure, and redesign. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Design, CNC manufacturing, assembly, and testing of a custom tri-wheel dolly created in Onshape.">
+  <title>Dolly Design &amp; Manufacturing — Harrison Berger</title>
+
+  <!-- Keep this line if your main portfolio already uses it. -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Project-specific styling. -->
+  <link rel="stylesheet" href="/assets/css/dolly.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="/">Harrison Berger</a></div>
+      <nav id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/projects/machining.html">Machining</a></li>
+          <li><a href="/projects/engineering.html" aria-current="page">Engineering</a></li>
+          <li><a href="/projects/buckeye/index.html">Buckeye</a></li>
+        </ul>
+      </nav>
+      <button id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="project-hero" aria-labelledby="project-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Mechanical design · CNC manufacturing · functional testing</p>
+          <h1 id="project-title">Tri-Wheel Dolly Design &amp; Manufacturing</h1>
+          <p class="hero-summary">
+            A folding material-handling dolly designed in Onshape and manufactured with CNC milling.
+            The project combined mechanical design, detailed engineering drawings, component fabrication,
+            assembly, and final demonstration.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#showcase">Watch demonstration</a>
+            <a class="button button-secondary" href="/assets/images/Dolly_Content/drawing-packet.pdf" target="_blank" rel="noopener">View drawing packet</a>
+          </div>
+
+          <dl class="project-facts" aria-label="Project facts">
+            <div><dt>CAD</dt><dd>Onshape</dd></div>
+            <div><dt>Manufacturing</dt><dd>CNC milling</dd></div>
+            <div><dt>Documentation</dt><dd>15-page drawing packet</dd></div>
+            <div><dt>Configuration</dt><dd>Folding tri-wheel dolly</dd></div>
+          </dl>
+        </div>
+
+        <figure class="hero-media">
+          <img src="/assets/images/Dolly_Content/showcase-upright.jpeg" alt="Completed tri-wheel dolly standing upright at an engineering design showcase">
+          <figcaption>Completed dolly in its upright configuration.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="overview-title">
+      <div class="container split-layout">
+        <div>
+          <p class="section-kicker">Project overview</p>
+          <h2 id="overview-title">From CAD concept to working prototype</h2>
+          <p>
+            The dolly was developed as a complete mechanical system rather than a single machined component.
+            The design uses paired tri-wheel assemblies to move over changes in elevation, a folding frame for
+            storage, and custom linkage and locking features to control the deployed configuration.
+          </p>
+          <p>
+            My work included CAD design in Onshape, preparation of manufacturing drawings, CNC machining of
+            custom parts, assembly, inspection, troubleshooting, and demonstration of the finished device.
+          </p>
+        </div>
+
+        <aside class="skills-card" aria-labelledby="skills-title">
+          <h3 id="skills-title">Skills demonstrated</h3>
+          <ul class="tag-list">
+            <li>Onshape CAD</li>
+            <li>CNC milling</li>
+            <li>Design for manufacturing</li>
+            <li>Assembly design</li>
+            <li>Engineering drawings</li>
+            <li>Dimensional inspection</li>
+            <li>Prototype testing</li>
+            <li>Iterative problem solving</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-muted" aria-labelledby="design-title">
+      <div class="container">
+        <p class="section-kicker">Design development</p>
+        <h2 id="design-title">CAD architecture and mechanical layout</h2>
+
+        <div class="media-text-grid">
+          <button class="image-button" type="button" data-full="/assets/images/Dolly_Content/cad-rendering.jpeg" data-alt="Onshape CAD rendering of the full tri-wheel dolly">
+            <img src="/assets/images/Dolly_Content/cad-rendering.jpeg" alt="Onshape CAD rendering of the full tri-wheel dolly" loading="lazy">
+            <span>Open CAD rendering</span>
+          </button>
+
+          <div>
+            <h3>Full assembly model</h3>
+            <p>
+              The Onshape model established the overall frame geometry, platform position, linkage locations,
+              and tri-wheel arrangement before fabrication. Modeling the full assembly allowed component
+              interfaces and motion to be evaluated before CNC manufacturing began.
+            </p>
+            <h3>Primary design features</h3>
+            <ul class="check-list">
+              <li>Tri-wheel assemblies at the base for negotiating steps and raised surfaces.</li>
+              <li>A folding upper frame that reduces the dolly's stored footprint.</li>
+              <li>Custom joint and locking components connecting the frame sections.</li>
+              <li>A broad load platform supported by an aluminum frame structure.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" aria-labelledby="drawings-title">
+      <div class="container">
+        <p class="section-kicker">Technical documentation</p>
+        <h2 id="drawings-title">Engineering drawing packet</h2>
+        <p class="section-intro">
+          The 15-page packet includes exploded assembly views, bills of materials, complete assembly drawings,
+          and dimensioned part drawings used to communicate the design and support manufacturing.
+        </p>
+
+        <div class="drawing-layout">
+          <div class="drawing-summary-card">
+            <h3>Included documentation</h3>
+            <ul class="check-list">
+              <li>Left tri-wheel exploded subassembly</li>
+              <li>Base and complete dolly assemblies</li>
+              <li>Baseplate, rods, crossbar, and handle</li>
+              <li>Gear plate and joint-related components</li>
+              <li>Tri-wheel frame, axle, hub, and wheel guard</li>
+            </ul>
+            <div class="drawing-actions">
+              <a class="button button-primary" href="/assets/images/Dolly_Content/drawing-packet.pdf" target="_blank" rel="noopener">Open full PDF</a>
+              <a class="button button-secondary" href="/assets/images/Dolly_Content/drawing-packet.pdf" download>Download PDF</a>
+            </div>
+          </div>
+
+          <div class="pdf-preview" aria-label="Embedded preview of the dolly engineering drawing packet">
+            <object data="/assets/images/Dolly_Content/drawing-packet.pdf#page=1&amp;view=FitH" type="application/pdf">
+              <p>
+                Your browser cannot display the embedded PDF.
+                <a href="/assets/images/Dolly_Content/drawing-packet.pdf">Open the drawing packet instead.</a>
+              </p>
+            </object>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="section section-muted" aria-labelledby="manufacturing-title">
+      <div class="container">
+        <p class="section-kicker">Manufacturing process</p>
+        <h2 id="manufacturing-title">CNC-machined components</h2>
+        <p class="section-intro">
+          Major custom components were produced with CNC milling and then assembled with the frame, wheels,
+          axles, and purchased hardware.
+        </p>
+
+        <div class="video-card-grid">
+          <article class="video-card">
+            <div class="video-frame video-frame-horizontal">
+              <iframe
+                src="https://www.youtube.com/embed/YaGGJSeiv-k?si=bs4_l4rgEwsROafA"
+                title="CNC machining of the dolly baseplate"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="card-label">Component 01</p>
+              <h3>Baseplate machining</h3>
+              <p>CNC machining of the primary load platform used at the bottom of the assembly.</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame video-frame-vertical">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/2Mlt6c6k2mk"
+                title="CNC machining of a dolly wheel guard"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="card-label">Component 02</p>
+              <h3>Wheel guard machining</h3>
+              <p>Machining the wheel-guard geometry that supports and locates the tri-wheel mechanism.</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame video-frame-vertical">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/HXLvTPJBALQ"
+                title="CNC machining of a dolly tri-wheel frame"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="card-label">Component 03</p>
+              <h3>Tri-wheel frame machining</h3>
+              <p>Manufacturing the frame component that connects the rotating wheel hubs to the dolly.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" aria-labelledby="mechanism-title">
+      <div class="container">
+        <p class="section-kicker">Mechanical feature</p>
+        <h2 id="mechanism-title">Custom joint linkage</h2>
+
+        <div class="featured-video featured-video-reverse">
+          <div class="featured-video-copy">
+            <h3>Folding-frame connection</h3>
+            <p>
+              The custom linkage joins sections of the frame and permits controlled movement between the
+              collapsed and upright configurations. The mechanism was designed as part of the overall assembly
+              rather than added after fabrication.
+            </p>
+            <a class="button button-primary" href="https://youtu.be/-uyz3gAgg_A" target="_blank" rel="noopener">Open the linkage demonstration on YouTube</a>
+          </div>
+          <div class="video-frame video-frame-horizontal">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/-uyz3gAgg_A"
+              title="Demonstration of the custom dolly joint linkage"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section section-muted" aria-labelledby="assembly-title">
+      <div class="container">
+        <p class="section-kicker">Assembly and inspection</p>
+        <h2 id="assembly-title">Bringing the manufactured parts together</h2>
+
+        <div class="gallery-grid gallery-grid-three">
+          <button class="image-button" type="button" data-full="/assets/images/Dolly_Content/tri-wheel-components.jpeg" data-alt="Tri-wheel components, wheels, fasteners, washers, and digital calipers arranged for assembly">
+            <img src="/assets/images/Dolly_Content/tri-wheel-components.jpeg" alt="Tri-wheel components, wheels, fasteners, washers, and digital calipers arranged for assembly" loading="lazy">
+            <span>Tri-wheel components and inspection tools</span>
+          </button>
+          <button class="image-button" type="button" data-full="/assets/images/Dolly_Content/bottom-assembly.png" data-alt="Partially assembled lower dolly structure with paired tri-wheel mechanisms">
+            <img src="/assets/images/Dolly_Content/bottom-assembly.png" alt="Partially assembled lower dolly structure with paired tri-wheel mechanisms" loading="lazy">
+            <span>Lower assembly in progress</span>
+          </button>
+          <button class="image-button" type="button" data-full="/assets/images/Dolly_Content/collapsed-dolly.jpg" data-alt="Dolly folded into its compact storage configuration">
+            <img src="/assets/images/Dolly_Content/collapsed-dolly.jpg" alt="Dolly folded into its compact storage configuration" loading="lazy">
+            <span>Collapsed storage configuration</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section failure-solution-section" aria-labelledby="iteration-title">
+  <div class="container">
+
+    <div class="failure-solution-heading">
+      <div>
+        <p class="section-kicker">Failure analysis and redesign</p>
+
+        <h2 id="iteration-title">
+          Turning a gear failure into a stronger mechanical solution
+        </h2>
+      </div>
+
+      <p class="section-intro">
+        Stair testing revealed that outward reaction forces at the
+        tri-wheel assemblies were spreading the lower frame and
+        concentrating load on the transmission gear. The redesign
+        addresses the source of that motion instead of only replacing
+        the damaged component.
+      </p>
+    </div>
+
+    <!-- Failure analysis -->
+    <article class="failure-analysis-card">
+
+      <div class="failure-card-label">
+        <span>01</span>
+        Diagnose the load path
+      </div>
+
+      <button
+        class="failure-infographic-button"
+        type="button"
+        data-full="/assets/images/Dolly_Content/Gear_Failure_Infographic.png"
+        data-alt="Engineering force diagram showing the vertical weight and outward reaction forces acting on the tri-wheel dolly while climbing stairs">
+
+        <img
+          src="/assets/images/Dolly_Content/Gear_Failure_Infographic.png"
+          alt="Engineering force diagram showing the vertical weight and outward reaction forces acting on the tri-wheel dolly while climbing stairs"
+          loading="lazy">
+
+        <span>Open force diagram</span>
+      </button>
+
+    </article>
+      <article class="testing-card">
+
+    <div class="failure-card-label">
+        <span>02</span>
+        Experimental Validation
+    </div>
+
+    <div class="testing-layout">
+
+    <video
+        controls
+        preload="metadata"
+        playsinline>
+
+        <source
+            src="/assets/images/Dolly_Content/Weighted_Testing_Video.mp4"
+            type="video/mp4">
+
+        Your browser does not support the video.
+    </video>
+
+    <div class="testing-right-column">
+
+        <div class="testing-copy">
+            <h3>
+                Stair testing exposed the failure mechanism
+            </h3>
+
+            <p>
+                During repeated stair-climbing tests, the tri-wheel
+                assemblies spread outward under load. This motion
+                transferred excessive force into the transmission gear,
+                eventually producing accelerated wear and gear damage.
+            </p>
+
+            <p>
+                The observed behavior matched the predicted force path
+                shown in the engineering analysis and directly guided
+                the redesign effort.
+            </p>
+        </div>
+
+        <img
+            class="failed-gear-image"
+            src="/assets/images/Dolly_Content/gear-plate-failure.jpg"
+            alt="Gear plate damaged during weighted stair testing"
+            loading="lazy">
+
+    </div>
+
+</div>
+
+</article>
+    <div class="failure-to-solution" aria-hidden="true">
+      <span></span>
+      <strong>Design response</strong>
+      <span></span>
+    </div>
+
+    <!-- Redesigned solution -->
+    <article class="solution-card">
+
+      <button
+        class="solution-image-button"
+        type="button"
+        data-full="/assets/images/Dolly_Content/Gear_Failure_Solution.jpeg"
+        data-alt="Close-up of the added aluminum stop feature beside the dolly tri-wheel gear assembly">
+
+        <img
+          src="/assets/images/Dolly_Content/Gear_Failure_Solution.jpeg"
+          alt="Close-up of the added aluminum stop feature beside the dolly tri-wheel gear assembly"
+          loading="lazy">
+
+        <span>Open solution detail</span>
+      </button>
+
+      <div class="solution-copy">
+
+        <div class="failure-card-label">
+          <span>03</span>
+          Constrain outward motion
+        </div>
+
+        <h3>
+          Added mechanical stop protects the gear train
+        </h3>
+
+        <p>
+          A machined stop feature was added beside the tri-wheel assembly
+          to physically limit lateral spreading under stair-climbing
+          loads. By reacting the outward force through a rigid structural
+          feature, the revised assembly reduces bending and tooth load at
+          the transmission gear.
+        </p>
+
+        <div class="solution-results" aria-label="Redesign benefits">
+
+          <div>
+            <strong>Failure mode</strong>
+            <span>Wheel assemblies spread apart under load.</span>
+          </div>
+
+          <div>
+            <strong>Design change</strong>
+            <span>Rigid stop limits outward displacement.</span>
+          </div>
+
+          <div>
+            <strong>Expected result</strong>
+            <span>Lower gear stress and improved durability.</span>
+          </div>
+
+        </div>
+      </div>
+
+    </article>
+
+  </div>
+</section>
+
+    <section id="showcase" class="section section-dark" aria-labelledby="showcase-title">
+      <div class="container">
+        <p class="section-kicker">Final result</p>
+        <h2 id="showcase-title">Showcase demonstration</h2>
+        <p class="section-intro">
+          The completed prototype was presented at the engineering design showcase in both its deployed and
+          folded configurations.
+        </p>
+
+        <div class="featured-video">
+          <div class="video-frame video-frame-vertical">
+            <iframe
+              src="https://www.youtube.com/embed/I_gnrs6Vwu0"
+              title="Tri-wheel dolly showcase demonstration"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <div class="featured-video-copy">
+            <h3>Deployed and folding operation</h3>
+            <p>
+              This demonstration shows the completed dolly, including the frame motion and transition between
+              operating and storage configurations.
+            </p>
+            <a class="button button-primary" href="https://youtube.com/shorts/I_gnrs6Vwu0" target="_blank" rel="noopener">Open the demonstration on YouTube</a>
+          </div>
+        </div>
+
+        <div class="gallery-grid gallery-grid-two dolly-showcase">
+          <button class="image-button" type="button" data-full="/assets/images/Dolly_Content/showcase-horizontal.jpeg" data-alt="Dolly opened horizontally during the engineering showcase">
+            <img src="/assets/images/Dolly_Content/showcase-horizontal.jpeg" alt="Dolly opened horizontally during the engineering showcase" loading="lazy">
+            <span>Horizontal configuration</span>
+          </button>
+          <button class="image-button" type="button" data-full="/assets/images/Dolly_Content/showcase-upright.jpeg" data-alt="Dolly standing upright during the engineering showcase">
+            <img src="/assets/images/Dolly_Content/showcase-upright.jpeg" alt="Dolly standing upright during the engineering showcase" loading="lazy">
+            <span>Upright configuration</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+
+>
+    <section class="section" aria-labelledby="outcomes-title">
+      <div class="container">
+        <p class="section-kicker">Project outcomes</p>
+        <h2 id="outcomes-title">What the project demonstrates</h2>
+        <div class="outcome-grid">
+          <article>
+            <span class="outcome-number">01</span>
+            <h3>System-level design</h3>
+            <p>Created a working assembly with structural, rolling, folding, and locking functions.</p>
+          </article>
+          <article>
+            <span class="outcome-number">02</span>
+            <h3>CAD-to-CNC workflow</h3>
+            <p>Converted Onshape component designs into CNC-machined physical parts.</p>
+          </article>
+          <article>
+            <span class="outcome-number">03</span>
+            <h3>Technical communication</h3>
+            <p>Produced assembly views, bills of materials, and detailed manufacturing drawings.</p>
+          </article>
+          <article>
+            <span class="outcome-number">04</span>
+            <h3>Testing and iteration</h3>
+            <p>Assembled, demonstrated, inspected, and documented both successful and failed components.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-next" aria-label="Next project navigation">
+      <div class="container project-next-inner">
+        <div>
+          <p class="section-kicker">Engineering projects</p>
+          <h2>Return to the project index</h2>
+        </div>
+        <a class="button button-primary" href="/projects/engineering.html">View all engineering projects</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Harrison Berger. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <dialog class="image-modal" id="image-modal" aria-labelledby="modal-caption">
+    <button class="modal-close" type="button" aria-label="Close image viewer">&times;</button>
+    <img id="modal-image" src="" alt="">
+    <p id="modal-caption"></p>
+  </dialog>
+
+  <script src="/assets/js/dolly.js"></script>
+</body>
+</html>

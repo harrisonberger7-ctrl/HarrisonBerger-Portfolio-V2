@@ -1,0 +1,812 @@
+<!doctype html>
+<!-- Smart Water Bottle case study: requirements, electronics, software, CAD, and documentation. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Smart Water Bottle | Harrison Berger</title>
+
+  <meta
+    name="description"
+    content="Arduino-powered smart water bottle prototype designed to monitor water temperature and level while controlling a variable-speed water pump."
+  >
+
+  <!-- Main portfolio styles -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Styles specific to this project -->
+  <link rel="stylesheet" href="/assets/css/smart-water-bottle.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =========================
+       HEADER / NAVIGATION
+  ========================== -->
+
+  <header class="site-header">
+    <div class="container">
+
+      <div class="brand">
+        <a href="/">Harrison Berger</a>
+      </div>
+
+      <nav id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/projects/machining.html">Machining</a></li>
+          <li><a href="/projects/engineering.html" aria-current="page">Engineering</a></li>
+          <li><a href="/projects/buckeye/index.html">Buckeye Space Launch Initiative</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="water-bottle-hero">
+      <div class="container water-bottle-hero-grid">
+
+        <div class="water-bottle-hero-copy">
+
+          <p class="project-eyebrow">
+            Arduino · Embedded Systems · Product Development
+          </p>
+
+          <h1>Smart Water Bottle</h1>
+
+          <p class="project-lead">
+            An Arduino-powered water-dispensing prototype designed to improve
+            accessibility for elderly and disabled users. The system monitors
+            water level and temperature, displays live information on an LCD,
+            and provides variable pump control through an analog joystick.
+          </p>
+
+          <div class="project-actions">
+
+            <a
+              class="btn-secondary"
+              href="#demonstration"
+            >
+              Watch Demonstration
+            </a>
+
+            <a
+              class="btn-secondary"
+              href="/assets/images/Smart_Water_Bottle_Content/Smart_Water_Bottle_Lab_Report.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              View Lab Report
+            </a>
+
+          </div>
+
+        </div>
+
+        <button
+          class="image-button water-bottle-hero-image"
+          type="button"
+          data-full="/assets/images/Smart_Water_Bottle_Content/smart-water-bottle-cad.png"
+          data-alt="CAD rendering of the Smart Water Bottle prototype enclosure"
+        >
+          <img
+            src="/assets/images/Smart_Water_Bottle_Content/smart-water-bottle-cad.png"
+            alt="CAD rendering of the Smart Water Bottle prototype enclosure"
+          >
+          <span>Prototype CAD rendering</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         PROJECT FACTS
+    ========================== -->
+
+    <section class="project-facts-section">
+      <div class="container">
+
+        <div class="project-facts">
+
+          <article class="project-fact">
+            <span class="project-fact-label">Course</span>
+            <strong>ME 2900</strong>
+          </article>
+
+          <article class="project-fact">
+            <span class="project-fact-label">Completed</span>
+            <strong>Spring 2025</strong>
+          </article>
+
+          <article class="project-fact">
+            <span class="project-fact-label">Controller</span>
+            <strong>Elegoo UNO R3</strong>
+          </article>
+
+          <article class="project-fact">
+            <span class="project-fact-label">Programming</span>
+            <strong>Arduino / C++</strong>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         OVERVIEW
+    ========================== -->
+
+    <section class="project-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-kicker">Project Overview</p>
+          <h2>Designing an accessible automated drinking system</h2>
+        </div>
+
+        <div class="overview-grid">
+
+          <div class="overview-copy">
+
+            <p>
+              The Smart Water Bottle was developed to reduce the physical effort
+              required to drink water. Instead of requiring the user to lift,
+              tilt, or repeatedly open a conventional bottle, the prototype uses
+              an electrically controlled pump to move water through flexible
+              tubing.
+            </p>
+
+            <p>
+              An Elegoo UNO R3 reads the water-level sensor, waterproof
+              temperature probe, and analog joystick. It then controls the pump
+              and updates the LCD 1602 display with real-time operating data.
+            </p>
+
+          </div>
+
+          <div class="feature-list-card">
+
+            <h3>Primary Design Goals</h3>
+
+            <ul class="check-list">
+              <li>Automate water dispensing</li>
+              <li>Monitor the remaining water level</li>
+              <li>Measure water temperature</li>
+              <li>Display live system information</li>
+              <li>Provide variable pump output</li>
+              <li>Prevent the pump from operating while dry</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         VIDEO
+    ========================== -->
+
+    <section
+      id="demonstration"
+      class="project-section project-section-alt"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-kicker">Functional Prototype</p>
+          <h2>System demonstration</h2>
+
+          <p>
+            The finished prototype demonstrates variable pump control,
+            temperature measurement, water-level monitoring, and live LCD
+            feedback.
+          </p>
+        </div>
+
+        <div class="video-frame water-bottle-video">
+
+          <iframe
+            src="https://www.youtube.com/embed/7WF9dTOJ-Cs"
+            title="Smart Water Bottle prototype demonstration"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         FINISHED PROTOTYPE
+    ========================== -->
+
+    <section class="project-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-kicker">Prototype Assembly</p>
+          <h2>Completed functional system</h2>
+        </div>
+
+        <div class="prototype-grid">
+
+          <button
+            class="image-button prototype-main-image"
+            type="button"
+            data-full="/assets/images/Smart_Water_Bottle_Content/smart-water-bottle-finished.jpeg"
+            data-alt="Completed Smart Water Bottle prototype with LCD, electronics, pump, tubing, and sensors"
+          >
+            <img
+              src="/assets/images/Smart_Water_Bottle_Content/smart-water-bottle-finished.jpeg"
+              alt="Completed Smart Water Bottle prototype with LCD, electronics, pump, tubing, and sensors"
+              loading="lazy"
+            >
+
+            <span>Finished Smart Water Bottle prototype</span>
+          </button>
+
+          <div class="prototype-description-card">
+
+            <h3>Integrated Prototype</h3>
+
+            <p>
+              The completed system combines the controller, display, sensors,
+              pump circuitry, and user controls into a functional proof of
+              concept.
+            </p>
+
+            <p>
+              The LCD provides immediate feedback for pump output, water level,
+              and water temperature while the joystick gives the user direct
+              control over dispensing speed.
+            </p>
+
+            <div class="status-badge">
+              Functional proof of concept
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         SYSTEM OPERATION
+    ========================== -->
+
+    <section class="project-section project-section-alt">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-kicker">System Architecture</p>
+          <h2>How the prototype operates</h2>
+        </div>
+
+        <div class="system-flow">
+
+          <article class="system-flow-card">
+            <span class="system-number">01</span>
+            <h3>Sensor Inputs</h3>
+            <p>
+              The Arduino reads the water-level sensor, waterproof DS18B20
+              temperature probe, and analog joystick.
+            </p>
+          </article>
+
+          <article class="system-flow-card">
+            <span class="system-number">02</span>
+            <h3>Arduino Processing</h3>
+            <p>
+              The controller converts sensor readings into water-level,
+              temperature, and pump-power values.
+            </p>
+          </article>
+
+          <article class="system-flow-card">
+            <span class="system-number">03</span>
+            <h3>User Feedback</h3>
+            <p>
+              Current pump output, temperature, and water level are displayed
+              on the LCD 1602 module.
+            </p>
+          </article>
+
+          <article class="system-flow-card">
+            <span class="system-number">04</span>
+            <h3>Pump Control</h3>
+            <p>
+              Joystick movement determines pump output while a water-level
+              condition prevents dry operation.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         HARDWARE
+    ========================== -->
+
+    <section class="project-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-kicker">Hardware</p>
+          <h2>Key system components</h2>
+        </div>
+
+        <div class="component-grid">
+
+          <article class="component-card">
+            <h3>Elegoo UNO R3</h3>
+            <p>
+              Main microcontroller responsible for reading inputs, performing
+              calculations, updating the display, and controlling the pump.
+            </p>
+          </article>
+
+          <article class="component-card">
+            <h3>LCD 1602 Module</h3>
+            <p>
+              Displays pump output, water level, and measured water temperature
+              in real time.
+            </p>
+          </article>
+
+          <article class="component-card">
+            <h3>Analog Joystick</h3>
+            <p>
+              Provides variable user input that is converted into a pump-power
+              percentage.
+            </p>
+          </article>
+
+          <article class="component-card">
+            <h3>Water-Level Sensor</h3>
+            <p>
+              Measures the amount of water remaining and helps prevent the pump
+              from operating while dry.
+            </p>
+          </article>
+
+          <article class="component-card">
+            <h3>DS18B20 Temperature Probe</h3>
+            <p>
+              Waterproof digital probe used to measure the temperature of the
+              stored water.
+            </p>
+          </article>
+
+          <article class="component-card">
+            <h3>DC Water Pump</h3>
+            <p>
+              Moves water through the tubing with variable output determined by
+              joystick position.
+            </p>
+          </article>
+
+          <article class="component-card">
+            <h3>Switching Circuit</h3>
+            <p>
+              Transistor-based interface allows the Arduino to control the
+              higher-current DC pump safely.
+            </p>
+          </article>
+
+          <article class="component-card">
+            <h3>Prototype Hardware</h3>
+            <p>
+              Breadboards, jumper wires, resistors, battery connections, tubing,
+              and enclosure materials complete the assembly.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         PROGRAMMING
+    ========================== -->
+
+    <section class="project-section project-section-alt">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-kicker">Embedded Programming</p>
+          <h2>Arduino control architecture</h2>
+
+          <p>
+            The Arduino sketch separates the major system functions into
+            dedicated routines, making the code easier to test and organize.
+          </p>
+        </div>
+
+        <div class="software-grid">
+
+          <article class="software-card">
+            <code>WaterTemp()</code>
+            <p>
+              Requests a reading from the DS18B20 sensor and converts the
+              temperature from Celsius to Fahrenheit.
+            </p>
+          </article>
+
+          <article class="software-card">
+            <code>WaterLevel()</code>
+            <p>
+              Reads the analog water-level signal and maps it to a percentage
+              suitable for display and pump protection.
+            </p>
+          </article>
+
+          <article class="software-card">
+            <code>Joystick()</code>
+            <p>
+              Converts joystick movement into a pump-control value ranging from
+              zero to full output.
+            </p>
+          </article>
+
+          <article class="software-card">
+            <code>LCDScreen()</code>
+            <p>
+              Updates the display with pump power, measured temperature, and
+              remaining water level.
+            </p>
+          </article>
+
+          <article class="software-card">
+            <code>PumpON()</code>
+            <p>
+              Converts the requested pump percentage into a PWM output for
+              variable-speed dispensing.
+            </p>
+          </article>
+
+          <article class="software-card">
+            <code>PumpOFF()</code>
+            <p>
+              Stops the pump whenever joystick input is absent or water level
+              drops below the programmed threshold.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="code-note">
+
+          <div>
+            <h3>Complete Source Code</h3>
+            <p>
+              The full Arduino sketch is included in Appendix A of the project
+              lab report.
+            </p>
+          </div>
+
+          <a
+            class="btn-secondary"
+            href="/assets/images/Smart_Water_Bottle_Content/Smart_Water_Bottle_Lab_Report.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            View Arduino Code
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         CAD DESIGN
+    ========================== -->
+
+    <section class="project-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-kicker">Mechanical Design</p>
+          <h2>Prototype enclosure concept</h2>
+
+          <p>
+            The enclosure was designed around a central water reservoir with
+            dedicated locations for the pump, temperature probe, water-level
+            sensor, and supporting electronics.
+          </p>
+        </div>
+
+        <div class="cad-layout">
+
+          <button
+            class="image-button cad-feature-image"
+            type="button"
+            data-full="/assets/images/Smart_Water_Bottle_Content/smart-water-bottle-cad.png"
+            data-alt="Labeled CAD rendering showing the Smart Water Bottle enclosure and component locations"
+          >
+            <img
+              src="/assets/images/Smart_Water_Bottle_Content/smart-water-bottle-cad.png"
+              alt="Labeled CAD rendering showing the Smart Water Bottle enclosure and component locations"
+              loading="lazy"
+            >
+            <span>Enclosure and component layout</span>
+          </button>
+
+          <div class="cad-details">
+
+            <article>
+              <h3>Central Reservoir</h3>
+              <p>
+                The main cylindrical cavity contains the water while leaving
+                space around the base for the pump and electrical hardware.
+              </p>
+            </article>
+
+            <article>
+              <h3>Sensor Integration</h3>
+              <p>
+                The water-level sensor is positioned vertically while the
+                waterproof temperature sensor extends into the reservoir.
+              </p>
+            </article>
+
+            <article>
+              <h3>Electronics Cavity</h3>
+              <p>
+                A separate lower section provides room for the controller,
+                wiring, power source, and pump circuitry.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         CHALLENGES
+    ========================== -->
+
+    <section class="project-section project-section-alt">
+      <div class="container">
+
+        <div class="two-column-content">
+
+          <div>
+
+            <div class="section-heading section-heading-left">
+              <p class="section-kicker">Engineering Challenges</p>
+              <h2>Integrating several systems into one prototype</h2>
+            </div>
+
+            <ul class="detail-list">
+              <li>
+                Coordinating the joystick, pump, display, water-level sensor,
+                and temperature probe within the main control loop
+              </li>
+
+              <li>
+                Developing conditional logic that prevented the pump from
+                operating below the minimum water-level threshold
+              </li>
+
+              <li>
+                Calibrating an inconsistent analog water-level sensor
+              </li>
+
+              <li>
+                Mapping joystick position to a stable and understandable pump
+                output percentage
+              </li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <div class="section-heading section-heading-left">
+              <p class="section-kicker">Future Development</p>
+              <h2>Potential design improvements</h2>
+            </div>
+
+            <ul class="detail-list">
+              <li>Replace temporary wiring with a soldered circuit or custom PCB</li>
+              <li>Develop a smaller, purpose-built enclosure</li>
+              <li>Use a longer and more reliable water-level sensor</li>
+              <li>Add a rechargeable internal battery</li>
+              <li>Improve cable management and waterproofing</li>
+              <li>Refine the design into a portable bottle-sized product</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         DOCUMENTATION
+    ========================== -->
+
+    <section class="project-section documentation-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-kicker">Engineering Documentation</p>
+          <h2>Prototype lab report</h2>
+
+          <p>
+            The complete report includes the project objective, design process,
+            prototype operation, challenges, Arduino sketch, CAD rendering, and
+            electrical schematics.
+          </p>
+        </div>
+
+        <div class="document-viewer">
+
+          <iframe
+            src="/assets/images/Smart_Water_Bottle_Content/Smart_Water_Bottle_Lab_Report.pdf"
+            title="Smart Water Bottle prototype lab report"
+            loading="lazy"
+          ></iframe>
+
+        </div>
+
+        <div class="document-actions">
+
+          <a
+            class="btn-secondary"
+            href="/assets/images/Smart_Water_Bottle_Content/Smart_Water_Bottle_Lab_Report.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            Open Full Report
+          </a>
+
+          <a
+            class="btn-secondary"
+            href="/assets/images/Smart_Water_Bottle_Content/Smart_Water_Bottle_Lab_Report.pdf"
+            download
+          >
+            Download PDF
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         CONCLUSION
+    ========================== -->
+
+    <section class="project-conclusion">
+      <div class="container">
+
+        <div class="project-conclusion-card">
+
+          <p class="section-kicker">Project Outcome</p>
+
+          <h2>
+            A multidisciplinary proof of concept combining mechanical design,
+            electronics, sensors, and embedded programming
+          </h2>
+
+          <p>
+            This project expanded my experience beyond traditional mechanical
+            design by requiring the integration of Arduino programming,
+            electronic components, sensor feedback, user controls, and a
+            functional fluid-handling system.
+          </p>
+
+        <a href="/projects/engineering.html" class="btn">Return to Engineering</a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================
+       IMAGE LIGHTBOX
+  ========================== -->
+
+  <div
+    class="image-modal"
+    id="image-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Expanded project image"
+    hidden
+  >
+    <button
+      class="image-modal-close"
+      id="image-modal-close"
+      type="button"
+      aria-label="Close expanded image"
+    >
+      ×
+    </button>
+
+    <img
+      id="image-modal-image"
+      src=""
+      alt=""
+    >
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Harrison Berger. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+
+  <!-- This script can be removed if main.js already runs your image lightbox. -->
+  <script>
+    const imageButtons = document.querySelectorAll(".image-button");
+    const imageModal = document.getElementById("image-modal");
+    const imageModalImage = document.getElementById("image-modal-image");
+    const imageModalClose = document.getElementById("image-modal-close");
+
+    function closeImageModal() {
+      imageModal.hidden = true;
+      imageModalImage.src = "";
+      imageModalImage.alt = "";
+      document.body.classList.remove("modal-open");
+    }
+
+    imageButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        imageModalImage.src = button.dataset.full;
+        imageModalImage.alt = button.dataset.alt;
+        imageModal.hidden = false;
+        document.body.classList.add("modal-open");
+        imageModalClose.focus();
+      });
+    });
+
+    imageModalClose.addEventListener("click", closeImageModal);
+
+    imageModal.addEventListener("click", (event) => {
+      if (event.target === imageModal) {
+        closeImageModal();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !imageModal.hidden) {
+        closeImageModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

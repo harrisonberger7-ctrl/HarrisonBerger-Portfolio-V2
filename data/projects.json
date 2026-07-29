@@ -1,0 +1,35 @@
+{
+  "projects": [
+{
+  "id": "eng-dolly",
+  "category": "engineering",
+  "title": "Machined Dolly",
+  "summary": "Design, machining, assembly, and demonstration of a custom mechanical dolly.",
+  "video": "https://www.youtube.com/embed/I_gnrs6Vwu0",
+  "detailsPage": "/projects/dolly.html"
+},
+    {
+      "id": "mach-001",
+      "category": "machining",
+      "title": "Air Motor",
+      "summary": "A personal project sourced from the College of Mechanical Engineering & Aerospace Engineering machine shop machining curriculum",
+      "material": "Aluminum, Brass, Tool Steel, Stainless steel",
+      "processes": "3-axis CNC milling, finishing, deburring",
+      "equipment": "HAAS VF-2 Mill, Clausing Manual Lathe",
+      "tolerances": "+/- 0.0005 in",
+      "role": "Design for manufacture, CAM programming, machining, QA",
+      "images": ["/assets/images/Air_Motor_Content/Air_Motor_Working.gif"],
+      "notes": "CAD Models and Blueprints propietary to OSU",
+      "detailsPage": "/projects/machining.html"
+    },
+
+        {
+      "id": "eng-water-bottle",
+      "category": "engineering",
+      "title": "Smart Water Bottle",
+      "summary": "Arduino-based smart water bottle featuring an LCD display and electronic sensing components.",
+      "video": "https://www.youtube.com/embed/7WF9dTOJ-Cs",
+      "detailsPage": "/projects/smart-water-bottle.html"
+    }
+  ]
+}

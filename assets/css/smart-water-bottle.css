@@ -1,0 +1,798 @@
+/* =====================================================
+   SMART WATER BOTTLE PROJECT PAGE
+===================================================== */
+
+:root {
+  --water-bottle-blue: #2476a8;
+  --water-bottle-blue-dark: #174c70;
+  --water-bottle-blue-light: #9cc9e2;
+  --water-bottle-border: rgba(107, 116, 124, 0.274);
+  --water-bottle-shadow: 0 20px 50px rgba(107, 116, 124, 0.274);
+
+  --water-bottle-text: #263943;
+}
+
+/* =====================================================
+   GENERAL PROJECT PAGE STYLES
+===================================================== */
+
+.project-section {
+  padding: 5rem 0;
+  color: var(--water-bottle-text);
+}
+
+.project-section-alt {
+  background: #f5f8fa;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.section-heading-left {
+  margin-left: 0;
+  text-align: left;
+}
+
+.section-heading h2 {
+  margin: 0.35rem 0 1rem;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.12;
+}
+
+.section-heading p {
+  color: #2b3f4b;
+  line-height: 1.75;
+  font-weight: 500;
+}
+
+.section-kicker,
+.project-eyebrow {
+  margin: 0;
+  color: #125b85;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.project-actions,
+.document-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.water-bottle-hero {
+  padding: 6rem 0 4.5rem;
+  background:
+    radial-gradient(
+      circle at 85% 25%,
+      rgba(36, 118, 168, 0.16),
+      transparent 32%
+    ),
+    linear-gradient(145deg, #f8fbfd 0%, #edf5f9 100%);
+}
+
+.water-bottle-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+  gap: 4rem;
+  align-items: center;
+}
+
+.water-bottle-hero-copy h1 {
+  margin: 0.6rem 0 1.25rem;
+  color: #102f43;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.project-lead {
+  max-width: 660px;
+  margin-bottom: 2rem;
+  color: #243b49;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.water-bottle-hero-image {
+  min-height: 530px;
+  border-radius: 18px;
+  box-shadow: var(--water-bottle-shadow);
+}
+
+.water-bottle-hero-image img {
+  width: 100%;
+  height: 530px;
+  object-fit: contain;
+  padding: 1rem;
+  background: #fff;
+}
+
+/* =====================================================
+   IMAGE BUTTONS
+===================================================== */
+
+.image-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: #fff;
+  cursor: zoom-in;
+  text-align: left;
+}
+
+.image-button img {
+  display: block;
+  width: 100%;
+  transition:
+    transform 220ms ease,
+    filter 220ms ease;
+}
+
+.image-button span {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  background: rgba(7, 20, 30, 0.78);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  backdrop-filter: blur(8px);
+}
+
+.image-button:hover img,
+.image-button:focus-visible img {
+  transform: scale(1.025);
+  filter: brightness(0.96);
+}
+
+/* =====================================================
+   PROJECT FACTS
+===================================================== */
+
+.project-facts-section {
+  padding: 0 0 1rem;
+  background: #edf5f9;
+}
+
+.project-facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  border: 1px solid var(--water-bottle-border);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(17, 38, 55, 0.08);
+}
+
+.project-fact {
+  padding: 1.4rem;
+  text-align: center;
+}
+
+.project-fact + .project-fact {
+  border-left: 1px solid var(--water-bottle-border);
+}
+
+.project-fact-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #43545e;
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+/* =====================================================
+   OVERVIEW
+===================================================== */
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.overview-copy {
+  color: #263943;
+  font-size: 1.08rem;
+  line-height: 1.85;
+}
+
+.feature-list-card,
+.prototype-description-card,
+.code-note {
+  padding: 2rem;
+  border: 1px solid var(--water-bottle-border);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(17, 38, 55, 0.07);
+}
+
+.feature-list-card h3,
+.prototype-description-card h3,
+.code-note h3 {
+  margin-top: 0;
+  color: var(--water-bottle-blue-dark);
+  font-weight: 800;
+}
+
+.check-list,
+.detail-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.check-list li,
+.detail-list li {
+  position: relative;
+  padding: 0.7rem 0 0.7rem 1.8rem;
+  line-height: 1.55;
+}
+
+.check-list li::before {
+  position: absolute;
+  top: 0.73rem;
+  left: 0;
+  content: "✓";
+  color: var(--water-bottle-blue);
+  font-weight: 900;
+}
+
+.detail-list li::before {
+  position: absolute;
+  top: 0.82rem;
+  left: 0.25rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--water-bottle-blue);
+  content: "";
+}
+.water-bottle-hero-copy h1 {
+    color: #163b56;
+    text-shadow: 0 2px 6px rgba(255,255,255,0.45);
+}
+
+/* =====================================================
+   VIDEO
+===================================================== */
+
+.water-bottle-video {
+  width: min(100%, 580px);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #0b1115;
+  box-shadow: var(--water-bottle-shadow);
+}
+
+.water-bottle-video iframe {
+  display: block;
+  width: 100%;
+  min-height: 720px;
+  border: 0;
+}
+
+/* =====================================================
+   PROTOTYPE
+===================================================== */
+
+.prototype-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.prototype-main-image {
+  min-height: 540px;
+  border-radius: 16px;
+  box-shadow: var(--water-bottle-shadow);
+}
+
+.prototype-main-image img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}
+
+.prototype-description-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.prototype-description-card p {
+  color: #263943;
+  line-height: 1.75;
+}
+
+.status-badge {
+  align-self: flex-start;
+  margin-top: 1rem;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid rgba(36, 118, 168, 0.25);
+  border-radius: 999px;
+  background: var(--water-bottle-blue-light);
+  color: var(--water-bottle-blue-dark);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+/* =====================================================
+   SYSTEM FLOW
+===================================================== */
+
+.system-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.system-flow-card {
+  position: relative;
+  padding: 2rem 1.5rem;
+  overflow: hidden;
+  border: 1px solid var(--water-bottle-border);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.system-number {
+  display: block;
+  margin-bottom: 1.3rem;
+  color: #0f628f;
+  font-size: 2.3rem;
+  font-weight: 900;
+  opacity: 1;
+}
+
+.system-flow-card h3 {
+  margin: 0 0 0.75rem;
+  color: var(--water-bottle-blue-dark);
+  font-weight: 800;
+}
+
+.system-flow-card p {
+  margin-bottom: 0;
+  color: #263943;
+  line-height: 1.65;
+}
+
+/* =====================================================
+   HARDWARE COMPONENTS
+===================================================== */
+
+.component-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.component-card {
+  padding: 1.65rem;
+  border: 1px solid var(--water-bottle-border);
+  border-radius: 13px;
+  background: #fff;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.component-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(17, 38, 55, 0.1);
+}
+
+.component-card h3 {
+  margin-top: 0;
+  color: var(--water-bottle-blue-dark);
+}
+
+.component-card p {
+  margin-bottom: 0;
+  color: #263943;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   SOFTWARE
+===================================================== */
+
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.software-card {
+  padding: 1.6rem;
+  border: 1px solid var(--water-bottle-border);
+  border-radius: 13px;
+  background: #fff;
+}
+
+.software-card code {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  color: #0c5278;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.software-card p {
+  margin: 0;
+  color: #263943;
+  line-height: 1.65;
+}
+
+.code-note {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.code-note p {
+  margin-bottom: 0;
+}
+
+/* =====================================================
+   CAD
+===================================================== */
+
+.cad-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.cad-feature-image {
+  min-height: 620px;
+  border-radius: 16px;
+  box-shadow: var(--water-bottle-shadow);
+}
+
+.cad-feature-image img {
+  width: 100%;
+  height: 620px;
+  object-fit: contain;
+  padding: 1rem;
+  background: #f4f6f7;
+}
+
+.cad-details {
+  display: grid;
+  gap: 1rem;
+}
+
+.cad-details article {
+  padding: 1.5rem;
+  border: 1px solid var(--water-bottle-border);
+  border-radius: 13px;
+  background: #fff;
+}
+
+.cad-details h3 {
+  margin-top: 0;
+}
+
+.cad-details p {
+  margin-bottom: 0;
+  color: #263943;
+  line-height: 1.65;
+}
+/* =====================================================
+   CHALLENGES AND IMPROVEMENTS
+===================================================== */
+
+.two-column-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+/* =====================================================
+   DOCUMENTATION
+===================================================== */
+
+.documentation-section {
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(36, 118, 168, 0.1),
+      transparent 30%
+    ),
+    #fff;
+}
+
+.document-viewer {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--water-bottle-border);
+  border-radius: 16px;
+  background: #e9edf0;
+  box-shadow: var(--water-bottle-shadow);
+}
+
+.document-viewer iframe {
+  display: block;
+  width: 100%;
+  height: 820px;
+  border: 0;
+}
+
+.document-actions {
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* =====================================================
+   CONCLUSION
+===================================================== */
+
+.project-conclusion {
+  padding: 5rem 0;
+  background: #102a3a;
+  color: #fff;
+}
+
+.project-conclusion-card {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project-conclusion-card .section-kicker {
+  color: #7ec4eb;
+}
+
+.project-conclusion-card h2 {
+  margin: 0.7rem 0 1.3rem;
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  line-height: 1.15;
+}
+
+.project-conclusion-card p {
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+/* =====================================================
+   LIGHTBOX
+===================================================== */
+
+.image-modal[hidden] {
+  display: none;
+}
+
+.image-modal {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 4rem 2rem 2rem;
+  background: rgba(5, 12, 18, 0.94);
+}
+
+.image-modal img {
+  max-width: min(94vw, 1500px);
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.image-modal-close {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 1050px) {
+
+  .water-bottle-hero-grid,
+  .prototype-grid,
+  .cad-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .water-bottle-hero-copy {
+    max-width: 760px;
+  }
+
+  .water-bottle-hero-image,
+  .water-bottle-hero-image img {
+    height: 500px;
+    min-height: 500px;
+  }
+
+  .project-facts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-fact:nth-child(3) {
+    border-top: 1px solid var(--water-bottle-border);
+    border-left: 0;
+  }
+
+  .project-fact:nth-child(4) {
+    border-top: 1px solid var(--water-bottle-border);
+  }
+
+  .system-flow,
+  .component-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .software-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  .project-section,
+  .project-conclusion {
+    padding: 3.5rem 0;
+  }
+
+  .water-bottle-hero {
+    padding: 4.5rem 0 3rem;
+  }
+
+  .water-bottle-hero-grid {
+    gap: 2.2rem;
+  }
+
+  .overview-grid,
+  .two-column-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .water-bottle-hero-image,
+  .water-bottle-hero-image img {
+    height: 390px;
+    min-height: 390px;
+  }
+
+  .prototype-main-image,
+  .prototype-main-image img {
+    height: 390px;
+    min-height: 390px;
+  }
+
+  .cad-feature-image,
+  .cad-feature-image img {
+    height: 500px;
+    min-height: 500px;
+  }
+
+  .water-bottle-video iframe {
+    min-height: 620px;
+  }
+
+  .document-viewer iframe {
+    height: 650px;
+  }
+
+  .code-note {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .project-facts,
+  .system-flow,
+  .component-grid,
+  .software-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-fact + .project-fact,
+  .project-fact:nth-child(3),
+  .project-fact:nth-child(4) {
+    border-top: 1px solid var(--water-bottle-border);
+    border-left: 0;
+  }
+
+  .project-actions,
+  .document-actions {
+    flex-direction: column;
+  }
+
+  .project-actions .button,
+  .document-actions .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .water-bottle-hero-image,
+  .water-bottle-hero-image img {
+    height: 310px;
+    min-height: 310px;
+  }
+
+  .prototype-main-image,
+  .prototype-main-image img {
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .cad-feature-image,
+  .cad-feature-image img {
+    height: 410px;
+    min-height: 410px;
+  }
+
+  .water-bottle-video iframe {
+    min-height: 540px;
+  }
+
+  .document-viewer iframe {
+    height: 520px;
+  }
+
+}
+.project-section {
+    background: #ffffff;
+}
+
+.project-section.project-section-alt {
+    background: #eef4f8;
+}
+
+body {
+  background: #e8f1f5;
+}
+
+.project-section {
+  background: #f7fafc;
+}
+
+.project-section-alt {
+  background: #92ddff;
+}
