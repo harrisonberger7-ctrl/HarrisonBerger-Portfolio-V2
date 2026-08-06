@@ -212,7 +212,7 @@ function renderMachiningProjects(container, projects) {
 
         <model-viewer
           class="air-motor-model"
-          src="/assets/images/Air_Motor_Content/Portfolio_Air_Motor.glb"
+          src="../assets/images/Air_Motor_Content/Portfolio_Air_Motor.glb"
           alt="Interactive 3D model of the completed air motor"
           camera-controls
           auto-rotate
@@ -220,7 +220,7 @@ function renderMachiningProjects(container, projects) {
         </model-viewer>
 
         <img
-          src="/assets/images/Air_Motor_Content/Air_Motor_Working.gif"
+          src="../assets/images/Air_Motor_Content/Air_Motor_Working.gif"
           alt="Completed air motor operating">
 
       </div>
@@ -239,7 +239,7 @@ function renderMachiningProjects(container, projects) {
 
           <figure class="slideshow-slide active">
             <img
-              src="/assets/images/Air_Motor_Content/Air_Motor_parts_1.jpeg"
+              src="../assets/images/Air_Motor_Content/Air_Motor_parts_1.jpeg"
               alt="First group of machined air motor components">
 
             <figcaption>
@@ -249,7 +249,7 @@ function renderMachiningProjects(container, projects) {
 
           <figure class="slideshow-slide">
             <img
-              src="/assets/images/Air_Motor_Content/Air_Motor_Parts_2.jpeg"
+              src="../assets/images/Air_Motor_Content/Air_Motor_Parts_2.jpeg"
               alt="Additional machined air motor components">
 
             <figcaption>
@@ -259,7 +259,7 @@ function renderMachiningProjects(container, projects) {
 
           <figure class="slideshow-slide">
             <img
-              src="/assets/images/Air_Motor_Content/Air_Motor_Fully_Assembled.jpg"
+              src="../assets/images/Air_Motor_Content/Air_Motor_Fully_Assembled.jpg"
               alt="Fully assembled air motor">
 
             <figcaption>
@@ -323,7 +323,7 @@ function renderMachiningProjects(container, projects) {
 
   <model-viewer
     class="machining-project-model shop-sign-model"
-    src="/assets/images/Shop-Sign-Content/Machine_Shop_Sign.glb"
+    src="../assets/images/Shop-Sign-Content/Machine_Shop_Sign.glb"
     alt="Interactive 3D model of the Arts and Sciences Machine Shop sign"
     camera-controls
     auto-rotate
@@ -339,7 +339,7 @@ function renderMachiningProjects(container, projects) {
 
           <figure class="slideshow-slide active">
             <img
-              src="/assets/images/Shop-Sign-Content/ASC_Machine_Shop_CAD_Concept.jpeg"
+              src="../assets/images/Shop-Sign-Content/ASC_Machine_Shop_CAD_Concept.jpeg"
               alt="Original CAD concept for the Arts and Sciences Machine Shop sign">
 
             <figcaption>
@@ -349,7 +349,7 @@ function renderMachiningProjects(container, projects) {
 
           <figure class="slideshow-slide">
             <img
-              src="/assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign_OP1_Finished.jpeg"
+              src="../assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign_OP1_Finished.jpeg"
               alt="Machine Shop sign after completion of operation 1">
 
             <figcaption>
@@ -359,7 +359,7 @@ function renderMachiningProjects(container, projects) {
 
           <figure class="slideshow-slide">
             <img
-              src="/assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign_OP2_Set_up.jpeg"
+              src="../assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign_OP2_Set_up.jpeg"
               alt="Machine Shop sign operation 2 setup">
 
             <figcaption>
@@ -373,7 +373,7 @@ function renderMachiningProjects(container, projects) {
               preload="metadata"
               playsinline>
               <source
-                src="/assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign_OP2_Rough_Video.mp4"
+                src="../assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign_OP2_Rough_Video.mp4"
                 type="video/mp4">
               Your browser does not support this video.
             </video>
@@ -385,7 +385,7 @@ function renderMachiningProjects(container, projects) {
 
           <figure class="slideshow-slide">
             <img
-              src="/assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign_OP2_Semi_Rough.jpeg"
+              src="../assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign_OP2_Semi_Rough.jpeg"
               alt="Machine Shop sign after semi-rough machining">
 
             <figcaption>
@@ -399,7 +399,7 @@ function renderMachiningProjects(container, projects) {
               preload="metadata"
               playsinline>
               <source
-                src="/assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign_OP2_Semi_Finish_Video.mp4"
+                src="../assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign_OP2_Semi_Finish_Video.mp4"
                 type="video/mp4">
               Your browser does not support this video.
             </video>
@@ -415,7 +415,7 @@ function renderMachiningProjects(container, projects) {
               preload="metadata"
               playsinline>
               <source
-                src="/assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign_OP2_Finished_Video.mp4"
+                src="../assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign_OP2_Finished_Video.mp4"
                 type="video/mp4">
               Your browser does not support this video.
             </video>
@@ -427,7 +427,7 @@ function renderMachiningProjects(container, projects) {
 
           <figure class="slideshow-slide">
             <img
-              src="/assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign.jpg"
+              src="../assets/images/Shop-Sign-Content/ASC_Machine_Shop_Sign.jpg"
               alt="Completed Arts and Sciences Machine Shop sign">
 
             <figcaption>
@@ -480,7 +480,7 @@ function renderMachiningProjects(container, projects) {
 
         <model-viewer
           class="machining-project-model"
-          src="/assets/images/Titan-76M-Content/TITAN-76M.glb"
+          src="../assets/images/Titan-76M-Content/TITAN-76M.glb"
           alt="Interactive 3D model of the Titan-76M component"
           camera-controls
           auto-rotate
@@ -500,7 +500,7 @@ function renderMachiningProjects(container, projects) {
               preload="metadata"
               playsinline>
               <source
-                src="/assets/images/Titan-76M-Content/Titan_76M_OP1_Roughing_Video.mp4"
+                src="../assets/images/Titan-76M-Content/Titan_76M_OP1_Roughing_Video.mp4"
                 type="video/mp4">
               Your browser does not support this video.
             </video>
@@ -512,7 +512,7 @@ function renderMachiningProjects(container, projects) {
 
           <figure class="slideshow-slide">
             <img
-              src="/assets/images/Titan-76M-Content/Titan_76M_OP1_Finished.jpeg"
+              src="../assets/images/Titan-76M-Content/Titan_76M_OP1_Finished.jpeg"
               alt="Titan-76M after completion of operation 1">
 
             <figcaption>
@@ -527,7 +527,7 @@ function renderMachiningProjects(container, projects) {
               preload="metadata"
               playsinline>
               <source
-                src="/assets/images/Titan-76M-Content/Titan_76M_OP2_Roughing_Video.mp4"
+                src="../assets/images/Titan-76M-Content/Titan_76M_OP2_Roughing_Video.mp4"
                 type="video/mp4">
               Your browser does not support this video.
             </video>
@@ -540,7 +540,7 @@ function renderMachiningProjects(container, projects) {
 
           <figure class="slideshow-slide">
             <img
-              src="/assets/images/Titan-76M-Content/Titan_76M_OP2_Roughed.jpeg"
+              src="../assets/images/Titan-76M-Content/Titan_76M_OP2_Roughed.jpeg"
               alt="Titan-76M during operation 2 rough machining">
 
             <figcaption>
@@ -550,7 +550,7 @@ function renderMachiningProjects(container, projects) {
 
           <figure class="slideshow-slide">
             <img
-              src="/assets/images/Titan-76M-Content/Titan_76M_OP2_Finished.jpeg"
+              src="../assets/images/Titan-76M-Content/Titan_76M_OP2_Finished.jpeg"
               alt="Titan-76M after completion of operation 2">
 
             <figcaption>
@@ -560,7 +560,7 @@ function renderMachiningProjects(container, projects) {
 
           <figure class="slideshow-slide">
             <img
-              src="/assets/images/Titan-76M-Content/Titan_76M_Finished.jpeg"
+              src="../assets/images/Titan-76M-Content/Titan_76M_Finished.jpeg"
               alt="Completed Titan-76M component">
 
             <figcaption>
