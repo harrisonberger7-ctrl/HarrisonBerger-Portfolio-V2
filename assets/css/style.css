@@ -849,3 +849,7 @@ main > .cards-grid {
     transition-duration: 0.01ms !important;
   }
 }
+.highlights > h2,
+.speech-section > h2 {
+  text-align: center;
+}
